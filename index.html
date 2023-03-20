@@ -28,7 +28,7 @@
                     <li><a href="#projet">Mes projets</a></li>
                     <li><a href="#certification">Certifications</a></li>
                     <div class="dropdown">
-                        <li class>Autres</li>
+                        <li class><a href="#">Autres</li></a>
                         <div class="dropdown-content">
                             <li><a href="#missions">Missions</a></li>
                             <li><a href="#stages">Stages</a></li>
@@ -224,7 +224,7 @@
     </section>
 
     <!-- Veille technologique -->
-    <!-- 
+    
     <section id="veilleTech" class="veilleTech">
                 <div class="container">
                     <div class="section-header">
@@ -258,7 +258,7 @@
                        
                     </div>
 
-    </section> -->
+    </section>
 
     <!-- Projet avenir -->
     <section id="projet" class="projet">
@@ -326,17 +326,17 @@
                     d'avance.
                 </p>
             </div>
-            <form action="contact.php" class="form">
+            <form action="https://formsubmit.co/selvanadin.laurent.sio@gmail.com" class="form">
                 <label for="firstname">
-                    <input type="text" name="firstname" id="firstname" placeholder="Nom"></label>
+                    <input type="text" name="firstname" id="firstname" placeholder="Nom" required></label>
 
                 <label for="lastname">
-                    <input type="text" name="lastname" id="lastname" placeholder="Prenom"></label>
+                    <input type="text" name="lastname" id="lastname" placeholder="Prenom" required></label>
 
                 <label for="email">
-                    <input type="email" name="email" id="email" placeholder="Email"></label>
+                    <input type="email" name="email" id="email" placeholder="Email" required></label>
 
-                <textarea name="message" id="message" placeholder="Message"></textarea>
+                <textarea name="message" id="message" placeholder="Message" required></textarea>
                 <input type="submit" class="btn" value="Envoyer">
 
 
