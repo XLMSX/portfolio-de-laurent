@@ -326,6 +326,7 @@ iframe {
 }
 
 
+
 @media screen and (min-width: 750px) {
     .about img {
         padding-right: 3rem;
@@ -402,6 +403,7 @@ li {
     gap: 25px;
     justify-content: center;
 }
+
 
 .form {
     max-width: 800px;
