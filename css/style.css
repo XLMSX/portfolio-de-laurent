@@ -138,7 +138,9 @@ iframe {
 
 }
 
-
+header {
+    display: block;
+}
 
 .header .logo {
     font-family: 'Poppins', sans-serif;
@@ -153,29 +155,16 @@ iframe {
 
 }
 
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
 
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    padding: 12px 16px;
-    z-index: 1;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
 
 .header li {
     display: inline-flex;
     align-items: center;
     padding: 0 5px;
+}
+
+.header a {
+    color: #444;
 }
 
 .header a {
@@ -406,8 +395,8 @@ li {
 
 
 .form {
-    max-width: 800px;
-    margin: 2rem auto 0 auto;
+    max-width: 600px;
+    margin: 4rem auto 0 auto;
 }
 
 .form input,
@@ -434,6 +423,7 @@ li {
 
 .form .btn:hover {
     cursor: pointer;
+
     background: #000;
 }
 
@@ -441,12 +431,46 @@ li {
 /* footer */
 
 footer {
-    background: #000;
-    color: #EEE;
+    background: #000000;
+    color: #FFFF;
     text-align: center;
     font-size: 1.4rem;
 }
 
 footer p {
     margin: 0;
+}
+
+footer .grid {
+    align-items: center;
+}
+
+footer .socials {
+    text-align: center;
+    justify-content: center;
+}
+
+footer .socials a {
+    fill: #EEE;
+    border: 1px solid #FFFF;
+    border-radius: 50%;
+    padding: 1rem;
+    width: 42px;
+    height: 42px;
+    display: flex;
+    justify-content: center;
+}
+
+footer .socials li {
+    padding: 0.6rem;
+}
+
+@media screen and (min-width:750px) {
+    footer {
+        text-align: left;
+    }
+
+    footer .grid__item {
+        max-width: 33.333%;
+    }
 }
